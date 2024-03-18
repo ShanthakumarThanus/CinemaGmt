@@ -1,0 +1,264 @@
+* {box-sizing: border-box;}
+
+html,body{height: 100%;}
+.container-fluid {
+  height: calc(100% - 100px);
+}
+
+html { 
+  height: 100% 
+}
+
+body { 
+    background: linear-gradient(#174082, #152745);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-fluid{
+    padding: 0 !important;  /* le padding permet de ne pas avoir les bandes blanches sur les côtés */
+}                           
+section.parallax-bg-1 {     /* associé avec les paramètres au dessus */
+background-size: cover;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-family: Lobster; 
+  font-size: 35px;
+  color: white;
+}
+
+.header a.bienvenue {
+  font-family: Alef; 
+  font-size: 25px;
+  color: white;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+.row {
+  background-color: black;
+}
+
+.txtprincip { /*Film en tendance !*/
+    position: absolute; 
+    left: 35%;
+    top: 27%;
+    color: white;
+    font-family: Gabriola;
+    font-size: 100px;
+    text-shadow: black 7px 2px 5px;
+}
+
+
+@font-face {
+  font-family: Lobster;
+  src: url(Lobster1.4.otf);
+}
+
+
+
+
+
+
+
+
+.items-list {
+box-shadow: -2px 1px 14px #e5e6e8;
+list-style-type: none;
+margin-left:0px;
+padding-left:0px;
+margin-bottom:15px;
+width:100%;
+}
+
+
+@media only screen and (max-width:400px)  {
+.items-list {
+height:110px;
+}
+.items-list .kmtext {
+  padding-bottom:6px;
+}
+.items-list img
+{
+float:left;
+ width:50%;
+ height:100%;
+ margin-right:7px;
+}
+.items-list .righttxt {
+ width:100%;
+padding: 5px;
+}
+}
+@media only screen and (min-width:401px) and (max-width:500px)  {
+.items-list {
+height:200px;
+}
+.items-list .kmtext {
+  padding-bottom:20px;
+}
+.items-list img
+{
+float:left;
+ width:50%;
+ height:100%;
+ margin-right:7px;
+}
+.items-list .righttxt {
+ width:100%;
+padding: 15px;
+}
+}
+
+@media only screen and (min-width:501px) and (max-width:700px)   {
+.items-list {
+height:250px;
+}
+.items-list .kmtext {
+  padding-bottom:20px;
+}
+.items-list img
+{
+float:left;
+ width:50%;
+ height:100%;
+ margin-right:7px;
+}
+.items-list .righttxt {
+ width:100%;
+padding: 40px;
+}
+}
+@media only screen and (min-width:701px) and (max-width:1399px)  {
+.items-list {
+height:300px;
+}
+.items-list .kmtext {
+  padding-bottom:20px;
+}
+.items-list img
+{
+float:left;
+ width:50%;
+ height:100%;
+ margin-right:7px;
+}
+.items-list .righttxt {
+ width:100%;
+padding: 50px;
+}
+}
+@media only screen and (min-width:1400px) {
+.items-list {
+height:330px;
+}
+.items-list .kmtext {
+  padding-bottom:20px;
+}
+.items-list img
+{
+float:left;
+ width:50%;
+ height:100%;
+ margin-right:7px;
+}
+.items-list .righttxt {
+ width:100%;
+padding: 60px;
+}
+}
+.items-list img
+{
+ object-fit: cover;
+border-right: 5px solid;
+border-image:   linear-gradient(to bottom, #86DF7B 50%,#7BAADF 50%) 2;
+}
+
+.items-list .kmtext {
+  color:#26b7a1;
+  font-size:80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 21px;
+    max-height: 48px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.items-list .pricetext {
+  color:#ffffff;
+  font-weight:bold;
+  padding-bottom:6px;
+  font-size:120%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 21px;
+    max-height: 48px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.items-list .titletext {
+  color:#919396;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 21px;
+    max-height: 48px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
